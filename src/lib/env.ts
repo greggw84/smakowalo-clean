@@ -1,3 +1,8 @@
+console.log('BUILD ENV CHECK', {
+  NEXT_PUBLIC_SITE_URL: JSON.stringify(process.env.NEXT_PUBLIC_SITE_URL),
+  NEXTAUTH_URL: JSON.stringify(process.env.NEXTAUTH_URL),
+  NEXT_PUBLIC_SUPABASE_URL: JSON.stringify(process.env.NEXT_PUBLIC_SUPABASE_URL),
+});
 // Environment variables validation
 function getRequiredEnv(name: string): string {
   const value = process.env[name];

@@ -1,3 +1,12 @@
+export const metadata = {
+  // TEMP to unblock build
+  metadataBase: new URL('https://smakowalo.pl'),
+};
+console.log('BUILD ENV CHECK', {
+  NEXT_PUBLIC_SITE_URL: JSON.stringify(process.env.NEXT_PUBLIC_SITE_URL),
+  NEXTAUTH_URL: JSON.stringify(process.env.NEXTAUTH_URL),
+  NEXT_PUBLIC_SUPABASE_URL: JSON.stringify(process.env.NEXT_PUBLIC_SUPABASE_URL),
+});
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
